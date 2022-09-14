@@ -1,4 +1,4 @@
-# Kanged From @sahid_malik
+# Kanged From @Akshay_Chand
 import asyncio
 import re
 import ast
@@ -108,7 +108,7 @@ async def next_page(bot, query):
             ],
         )
     btn.insert(0, [
-        InlineKeyboardButton('How To Download', url='https://youtube.com/shorts/8qFxD4ZeKTE?feature=share')
+        InlineKeyboardButton('How To Download', url='https://t.me/How_to_Open_Link_TG')
     ])
     try:
         await query.edit_message_reply_markup(
@@ -409,8 +409,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('➡️Channel', url='https://t.me/m_house786'),
-            InlineKeyboardButton('Group ', url='https://t.me/ReQuestYourMoviezz')
+            InlineKeyboardButton('➡️Channel', url='https://t.me/AKBackup'),
+            InlineKeyboardButton('Group', url='https://t.me/ReQuestYourMoviezz')
         ], [
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
@@ -441,8 +441,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/m_house786'),
-            InlineKeyboardButton('♥️ Source', url='https://t.me/m_house786')
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/AKBackup'),
+            InlineKeyboardButton('♥️ Source', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
             InlineKeyboardButton('🔐 Close', callback_data='close_data')
@@ -677,7 +677,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text="🗓 1/1", callback_data="pages")]
              )   
     btn.insert(0, [
-        InlineKeyboardButton('How To Download', url='https://youtube.com/shorts/8qFxD4ZeKTE?feature=share')
+        InlineKeyboardButton('How To Download', url='https://t.me/How_to_Open_Link_TG')
     ])    
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
