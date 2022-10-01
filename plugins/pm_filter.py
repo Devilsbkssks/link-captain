@@ -376,7 +376,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("I Like Your Smartness, But Don't Be Oversmart 😒", show_alert=True)
+            await query.answer("I Like Your Smartness, But Don't Be Oversmart Ok😆😆😒", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
@@ -409,8 +409,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('➡️Channel', url='https://t.me/AKBackup'),
-            InlineKeyboardButton('Group', url='https://t.me/ReQuestYourMoviezz')
+            InlineKeyboardButton('➡️How To Get Files', url='https://t.me/daagffgd'),
+        ], [
+            InlineKeyboardButton('➡️Channel', url='https://t.me/daagffgd'),
+            InlineKeyboardButton('Group', url='https://t.me/moviesrequesters')
         ], [
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
@@ -441,7 +443,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/AKBackup'),
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/daagffgd'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
@@ -677,7 +679,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text="🗓 1/1", callback_data="pages")]
              )   
     btn.insert(0, [
-        InlineKeyboardButton('How To Download', url='https://t.me/How_to_Open_Link_TG')
+        InlineKeyboardButton('How To Download', url='https://t.me/daagffgd')
     ])    
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
@@ -744,7 +746,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I couldn't find any movie in that name. If You Want Tis Movi e Request Us at - https://t.me/+BDvuprV0ctVkOTE1")
+        k = await msg.reply("I couldn't find any movie in that name. If You Want Tis Movie Request Us at - https://t.me/moviesrequesters")
         await asyncio.sleep(8)
         await k.delete()
         return
