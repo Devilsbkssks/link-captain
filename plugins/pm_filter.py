@@ -108,7 +108,7 @@ async def next_page(bot, query):
             ],
         )
     btn.insert(0, [
-        InlineKeyboardButton('How To Download', url='https://t.me/How_to_Open_Link_TG')
+        InlineKeyboardButton('How To Open Shortner', url='https://t.me/How_To_open_short/2')
     ])
     try:
         await query.edit_message_reply_markup(
@@ -376,7 +376,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("I Like Your Smartness, But Don't Be Oversmart😆😆😒", show_alert=True)
+            await query.answer("First Join This Channel Then Click To Refresh Button😒", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
@@ -409,7 +409,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('➡️How To Get Files', url='https://t.me/daagffgd'),
+            InlineKeyboardButton('➡️How To Open Shortner', url='https://t.me/How_To_open_short/2'),
         ], [
             InlineKeyboardButton('➡️Channel', url='https://t.me/daagffgd'),
             InlineKeyboardButton('Group', url='https://t.me/moviesrequesters')
@@ -679,7 +679,7 @@ async def auto_filter(client, msg, spoll=False):
             [InlineKeyboardButton(text="🗓 1/1", callback_data="pages")]
              )   
     btn.insert(0, [
-        InlineKeyboardButton('How To Download', url='https://t.me/daagffgd')
+        InlineKeyboardButton('How To Open Shortner', url='https://t.me/How_To_open_short/2')
     ])    
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     TEMPLATE = settings['template']
