@@ -1,4 +1,3 @@
-# Kanged From @Akshay_Chand
 import asyncio
 import re
 import ast
