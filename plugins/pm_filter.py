@@ -107,7 +107,7 @@ async def next_page(bot, query):
             ],
         )
     btn.insert(0, [
-        InlineKeyboardButton('How To Open Shortner', url='https://t.me/How_To_open_short/2')
+        InlineKeyboardButton('🚨Movie File kese Le🚨', url='https://t.me/How_To_open_short/14')
     ])
     try:
         await query.edit_message_reply_markup(
@@ -408,7 +408,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
-            InlineKeyboardButton('➡️How To Open Shortner', url='https://t.me/How_To_open_short/2'),
+            InlineKeyboardButton('🚨How To Open Get🚨', url='https://t.me/How_To_open_short/14'),
         ], [
             InlineKeyboardButton('➡️Channel', url='https://t.me/daagffgd'),
             InlineKeyboardButton('Group', url='https://t.me/moviesrequesters')
