@@ -137,7 +137,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('⭕️ This Movie Not Found my Database...\n\n⭕️ Ye movie Hamare database me Available nahi hai....\n\n⭕️ Request to admin.. 👇\n\n🔘 @Free_Reels_Bot')
+            k = await query.message.edit('⭕️This Movie Not Found my Database...\n\n⭕️Request Here👇👇👇\n⭕️https://t.me/mdiskmoviesbro\n⭕️https://t.me/mdiskmoviesbro')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -745,7 +745,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("⭕️ This Movie Not Found my Database..Please Request Here:- @Free_Reels_Bot")
+        k = await msg.reply("⭕️This Movie Not Found my Database...\n\n⭕️Request Here👇👇👇\n⭕️https://t.me/mdiskmoviesbro\n⭕️https://t.me/mdiskmoviesbro")
         await asyncio.sleep(8)
         await k.delete()
         return
